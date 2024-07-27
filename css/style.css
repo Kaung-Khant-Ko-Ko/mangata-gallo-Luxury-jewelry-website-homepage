@@ -1,0 +1,196 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 20%;
+  margin: 3rem 0px;
+}
+
+nav ul {
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+nav a:hover {
+  color: #b8977f;
+}
+
+h1,
+h2,
+article p {
+  font-family: "DM Serif Display", serif;
+  text-shadow: 0px 0px 2rem white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section--1 {
+  padding: 0px 5%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: linear-gradient(
+      90deg,
+      #f7f7f7 0%,
+      transparent 50%,
+      transparent 100%
+    ),
+    url("../images/Elegent\ Jewelry.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section--2 {
+  margin: 0px 5%;
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.section--2 > *:hover {
+  box-shadow: 0px 0px 10px #b8977f;
+  cursor: pointer;
+}
+
+.article {
+  width: calc(100% - 2rem);
+  padding: 0px 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 0px 0px 3px #bcbcbc;
+}
+
+.article--1 {
+  box-shadow: none;
+}
+
+.article--1 * {
+  margin: 0.5rem 0px;
+}
+
+.article--1 button {
+  width: 125px;
+  aspect-ratio: 3 / 1;
+  background-color: #b8977f;
+  border: 1px solid hsl(25, 29%, 71%);
+
+  font-weight: 800;
+}
+
+.article--1 button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #bcbcbc;
+  color: white;
+}
+
+#price {
+  padding-left: 1rem;
+  color: #b8977f;
+  text-shadow: 0px 0px 1px black;
+  font-size: 2em;
+}
+
+.article--2 {
+  background-image: linear-gradient(90deg, #f7f7f7 0%, transparent 100%),
+    url("../images/Green\ sapphires\ Necklace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article--3 {
+  background-image: linear-gradient(90deg, transparent 0%, #f7f7f7 100%),
+    url("../images/Victoria\ Diamonds\ Bracelet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+.article--3 * {
+  transform: scaleX(-1);
+}
+
+.article--4 {
+  background-image: linear-gradient(90deg, #f7f7f7 0%, transparent 100%),
+    url("../images/Perfect\ Rings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  margin: 3rem 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer p {
+  text-align: end;
+  font-size: 0.75em;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .section--2 {
+    flex-direction: column;
+  }
+}
